@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/controller2">
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+
+        android:background="@drawable/grid_item_radius_4"
+        >
+
+        <TextView
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mbti"
+            android:text="카카오톡 대화 내보내기를 통해 대화 내용을 저장 후,\n 카톡내용 가져오기 버튼을 누르세요!"
+            android:gravity="center_horizontal"
+            android:breakStrategy="balanced"
+            android:textSize="30dp"
+            android:textColor="#eeeeee"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout_2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/getChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#eeeeee"
+            android:text="검사하기"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_3"
+        android:layout_below="@id/layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_4"
+        >
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/piechart_1">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

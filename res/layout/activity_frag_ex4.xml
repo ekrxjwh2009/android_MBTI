@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="#eeeeee"
+    android:id="@+id/for_share"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_margin="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:textSize="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                />
+
+            <TextView
+                android:id="@+id/random_user_id"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hi"
+                />
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                />
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/random_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hi"
+                />
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성격유형"
+                />
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/random_user_mbti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hi"
+                />
+
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/extra_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=""
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/random_user_image"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/piechart">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        >
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공유하기"/>
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

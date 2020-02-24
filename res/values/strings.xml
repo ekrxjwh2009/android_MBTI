@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Just Like Me</string>
+    <string name="map_key" translatable="false">AIzaSyBz7Wzq-hDppkuq3c6wfe73KipHyRyKTio</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
